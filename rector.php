@@ -40,7 +40,7 @@ use Ssch\TYPO3Rector\Set\Typo3LevelSetList;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths([__DIR__]);
 
-    $rectorConfig->phpVersion(PhpVersion::PHP_81);
+    $rectorConfig->phpVersion(PhpVersion::PHP_82);
 
     $rectorConfig->sets([
         LevelSetList::UP_TO_PHP_84,
@@ -66,5 +66,5 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->rule(ConvertImplicitVariablesToExplicitGlobalsRector::class);
 
     $rectorConfig->phpstanConfig(Typo3Option::PHPSTAN_FOR_RECTOR_PATH);
-    $rectorConfig->phpstanConfig(__DIR__ . '/phpstan.neon');
+    $rectorConfig->phpstanConfig(__DIR__.'/phpstan.neon');
 };

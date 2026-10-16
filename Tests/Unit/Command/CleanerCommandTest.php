@@ -95,6 +95,6 @@ class CleanerCommandTest extends UnitTestCase
         $input = new ArrayInput(['foldersToClean' => ['path1', 'path2']]);
         $input->bind($command->getDefinition());
 
-        self::assertTrue($command->_call('execute', $input, $this->createMock(OutputInterface::class)) === 0);
+        self::assertTrue(0 === $command->_call('execute', $input, $this->createMock(OutputInterface::class)));
     }
 }

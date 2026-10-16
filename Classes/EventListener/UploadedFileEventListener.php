@@ -65,7 +65,8 @@ class UploadedFileEventListener
 {
     public function __construct(
         protected CleanerService $cleanerService,
-    ) {}
+    ) {
+    }
 
     public function cleanUpFile(AfterFileAddedEvent|AfterFileReplacedEvent $event): void
     {

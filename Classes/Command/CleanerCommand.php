@@ -71,7 +71,7 @@ final class CleanerCommand extends Command
     protected function translate(string $key): string
     {
         return $this->languageServiceFactory->create('default')->sL(
-            'LLL:EXT:mkcleaner/Resources/Private/Language/locallang.xlf:' . $key
+            'LLL:EXT:mkcleaner/Resources/Private/Language/locallang.xlf:'.$key
         );
     }
 
