@@ -2,7 +2,6 @@
 	"name" : "dmk/mkcleaner",
 	"description" : "Cleans files by removing any metadata with the help of mat2, exiftool and qpdf according to BSI guidelines.",
 	"type" : "typo3-cms-extension",
-	"version" : "14.0.0",
 	"keywords" : [
 		"TYPO3 CMS",
 		"mat2",
